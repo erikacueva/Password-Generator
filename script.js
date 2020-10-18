@@ -6,11 +6,6 @@
 // array of lowercase, uppercase, numeric, and/or special characters
 //  
 
-// var passWordLength = prompt ("Please select a password length between 8 and 128 characters.");
-//  while (passWordLength < 8 || passWordLength > 128) {
-//    alert ("Select a password length more than 8 characters long and less than 128 characters long.");
-//    prompt ("Please select a password length between 8 and 128 characters.");
-//  }
 
 var passWordLength = prompt ("Please select a password length between 8 and 128 characters.");
  while (passWordLength < 8 || passWordLength > 128) {
@@ -21,6 +16,9 @@ console.log(passWordLength)
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+for (var i=0; i == passWordLength.length; i++) {
+  passWordLength[i];
+}
 
 // Write password to the #password input
 function writePassword() {
@@ -28,6 +26,18 @@ function writePassword() {
   var password = generatePassword();
   passwordText.value = password;
 }
+
+function writePassword() {
+  let complexity =document.getElementById("passWordLength").value;
+  let value = randomFunctions;
+  let password ="";
+  // create for loop to choose password characters
+  for (var i = 0; i <=passWordLength; i++) {
+    password = password+values.randomFunctions;
+    document.getElementById("generate").value=password;
+  }
+}
+document.getElementById("generate").innerHTML +=password;
 
 let password = passWordLength;
 password ++; console.log(password)
